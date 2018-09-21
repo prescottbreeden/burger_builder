@@ -3,18 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "1.1.5"
   },
-	"scripts": {
-		"watch:sass": "node-sass src/sass/main.scss src/index.css -w",
-
-		"compile:sass": "node-sass sass/main.scss public/css/style.comp.css",
-		"prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.comp.css -o public/css/style.prefix.css",
-		"compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
-		"build:css": "npm-run-all compile:sass prefix:css compress:css",
-		"compress:js": "node-minify --compressor 'gcc' --input 'public/js/app.js --output 'public/js/app.min.js'"
+  "scripts": {
+    "watch:sass": "node-sass src/sass/main.scss src/index.css -w",
+    "compile:sass": "node-sass sass/main.scss public/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.comp.css -o public/css/style.prefix.css",
+    "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css",
+    "compress:js": "node-minify --compressor 'gcc' --input 'public/js/app.js --output 'public/js/app.min.js'"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
